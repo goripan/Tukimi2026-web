@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Zen Old Mincho:Regular";
+  src: url("https://static.figma.com/font/ZenOldMincho-Regular_1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  color: #ffffff;
+  background: #0a1128;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #0a1128;
+}
+
+h1,
+h2,
+p,
+ol,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.event-page {
+  min-height: 100dvh;
+  color: #ffffff;
+  background: #0a1128;
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero__image,
+.experience__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__content {
+  position: absolute;
+  top: 108px;
+  right: 16px;
+  left: 16px;
+  text-align: center;
+}
+
+.hero__title,
+.hero__subtitle {
+  font-family: "Zen Old Mincho:Regular", "Yu Mincho", "YuMincho",
+    "Hiragino Mincho ProN", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.hero__laboratory,
+.hero__date,
+.section-title,
+.overview__details {
+  font-family: "Yu Mincho:Regular", "Yu Mincho", "YuMincho",
+    "Hiragino Mincho ProN", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.hero__laboratory,
+.hero__date {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.hero__laboratory {
+  margin-top: 8px;
+}
+
+.hero__date {
+  margin-top: 2px;
+}
+
+.introduction {
+  padding: 42px 21px 35px;
+}
+
+.introduction__title {
+  font-family: "Yu Mincho:Demibold", "Yu Mincho", "YuMincho",
+    "Hiragino Mincho ProN", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41px;
+}
+
+.introduction__title span {
+  display: block;
+}
+
+.introduction__title span:last-child {
+  text-align: right;
+}
+
+.introduction__copy,
+.experience__steps,
+.overview__row dd {
+  font-family: "Yu Mincho:Light", "Yu Mincho", "YuMincho",
+    "Hiragino Mincho ProN", serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.introduction__copy {
+  margin-top: 25px;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.experience__title {
+  padding-bottom: 18px;
+}
+
+.experience__visual {
+  position: relative;
+  height: 557px;
+  overflow: hidden;
+}
+
+.experience__steps {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 9px 47px 0;
+  font-size: 20px;
+  line-height: 1.45;
+  list-style-type: decimal;
+}
+
+.overview {
+  padding: 33px 18px 0;
+}
+
+.overview__details {
+  max-width: 640px;
+  margin: 17px auto 0;
+}
+
+.overview__row {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  align-items: center;
+}
+
+.overview__row dt {
+  padding-left: 13px;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.overview__row dd {
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.overview__row--place dt,
+.overview__row--place dd {
+  line-height: 46px;
+}
+
+.overview__divider {
+  width: 100%;
+  height: 1px;
+}
+
+.overview__map {
+  width: 337px;
+  max-width: 100%;
+  height: 250px;
+  margin: 28px auto 0;
+  object-fit: cover;
+}
+
+@media (min-width: 640px) {
+  .introduction,
+  .overview {
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introduction {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 64px;
+    align-items: start;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .introduction__title {
+    font-size: 42px;
+    line-height: 1.35;
+  }
+
+  .introduction__title span:last-child {
+    text-align: left;
+  }
+
+  .introduction__copy {
+    max-width: 720px;
+    margin-top: 0;
+  }
+
+  .section-title {
+    font-size: 44px;
+  }
+
+  .experience__title {
+    padding-bottom: 40px;
+  }
+
+  .experience__visual {
+    height: 680px;
+  }
+
+  .experience__steps {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 48px 0;
+    font-size: 24px;
+  }
+
+  .overview {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .overview__map {
+    width: 520px;
+    height: auto;
+    margin-top: 48px;
+  }
+}
