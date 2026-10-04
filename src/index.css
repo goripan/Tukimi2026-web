@@ -166,12 +166,12 @@ img {
   margin: 0 auto;
   padding: 9px 0 0 1.5em;
   font-size: 20px;
-  line-height: 1.9;
+  line-height: 1.8;
   list-style-type: decimal;
 }
 
 .experience__steps li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .experience__steps li:last-child {
