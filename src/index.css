@@ -41,7 +41,7 @@ img {
   display: block;
 }
 
-/* ★PCでもスマホサイズのまま中央に表示する設定を追加 */
+/* PC等の大画面でもスマホサイズのまま画面中央に表示 */
 .event-page {
   min-height: 100dvh;
   color: #ffffff;
@@ -159,14 +159,19 @@ img {
   overflow: hidden;
 }
 
+/* ★修正箇所：どんなデバイスでも自然に折り返して中央配置されるように変更 */
 .experience__steps {
   position: relative;
   z-index: 1;
-  width: max-content;
+  width: fit-content;
+  max-width: 85%;
+  /* 画面幅が狭い場合は85%で折り返す（端に張り付かない） */
   margin: 0 auto;
   padding: 9px 0 0 1.5em;
+  /* 箇条書きの数字分の余白のみ確保 */
   font-size: 20px;
-  line-height: 1.45;
+  line-height: 1.5;
+  /* 自然な改行時に読みやすいよう行間を少し広く */
   list-style-type: decimal;
 }
 
