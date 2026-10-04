@@ -166,22 +166,28 @@ img {
   margin: 0 auto;
   padding: 9px 0 0 1.5em;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.6;
   list-style-type: decimal;
+}
+
+.experience__steps li {
+  margin-bottom: 4px;
+}
+
+.experience__steps li:last-child {
+  margin-bottom: 0;
 }
 
 .overview {
   padding: 40px 24px 60px;
 }
 
-/* ★修正：幅を地図と同じ 337px に指定して両端をピッタリ揃える */
 .overview__details {
   width: 337px;
   max-width: 100%;
   margin: 32px auto 0;
 }
 
-/* ★修正：親枠（337px）いっぱいに下線を引く */
 .overview__row {
   display: flex;
   align-items: center;
@@ -202,7 +208,6 @@ img {
   flex-shrink: 0;
 }
 
-/* ★修正：337pxの枠内に確実に収まるように最大フォントサイズを16pxに調整 */
 .overview__row dd {
   padding-left: 12px;
   font-size: clamp(12px, 3.5vw, 16px);
@@ -215,7 +220,6 @@ img {
   display: none;
 }
 
-/* 地図の幅（337px）*/
 .overview__map {
   width: 337px;
   max-width: 100%;
