@@ -41,10 +41,13 @@ img {
   display: block;
 }
 
+/* ★PCでもスマホサイズのまま中央に表示する設定を追加 */
 .event-page {
   min-height: 100dvh;
   color: #ffffff;
   background: #0a1128;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -168,7 +171,7 @@ img {
 }
 
 .overview {
-  padding: 33px 18px 0;
+  padding: 33px 18px 40px;
 }
 
 .overview__details {
@@ -210,69 +213,4 @@ img {
   height: 250px;
   margin: 28px auto 0;
   object-fit: cover;
-}
-
-@media (min-width: 640px) {
-
-  .introduction,
-  .overview {
-    padding-right: 8vw;
-    padding-left: 8vw;
-  }
-}
-
-@media (min-width: 1024px) {
-  .introduction {
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 64px;
-    align-items: start;
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-
-  .introduction__title {
-    font-size: 42px;
-    line-height: 1.35;
-  }
-
-  .introduction__title span:last-child {
-    text-align: left;
-  }
-
-  .introduction__copy {
-    max-width: 720px;
-    margin-top: 0;
-  }
-
-  .section-title {
-    font-size: 44px;
-  }
-
-  .experience__title {
-    padding-bottom: 40px;
-  }
-
-  .experience__visual {
-    height: 680px;
-  }
-
-  .experience__steps {
-    width: max-content;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 48px 0 0 1.5em;
-    font-size: 24px;
-  }
-
-  .overview {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  .overview__map {
-    width: 520px;
-    height: auto;
-    margin-top: 48px;
-  }
 }
