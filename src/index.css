@@ -159,8 +159,9 @@ img {
 .experience__steps {
   position: relative;
   z-index: 1;
-  width: 100%;
-  padding: 9px 47px 0;
+  width: max-content;
+  margin: 0 auto;
+  padding: 9px 0 0 1.5em;
   font-size: 20px;
   line-height: 1.45;
   list-style-type: decimal;
@@ -212,6 +213,7 @@ img {
 }
 
 @media (min-width: 640px) {
+
   .introduction,
   .overview {
     padding-right: 8vw;
@@ -256,9 +258,10 @@ img {
   }
 
   .experience__steps {
-    max-width: 900px;
+    width: max-content;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 48px 48px 0;
+    padding: 48px 0 0 1.5em;
     font-size: 24px;
   }
 
